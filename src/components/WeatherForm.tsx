@@ -21,7 +21,7 @@ export const WeatherForm = ({city, searchLocation, searchCity, handleChange}:Wea
             {searchLocation && 
                 <button onClick={searchLocation}><span role='img' aria-label="Geolocalisation">📍</span></button>
             }
-            <Button onClick={searchCity}>Chercher</Button>
+            <Button type="submit" onClick={searchCity}>Chercher</Button>
         </form>
     )
 }
